@@ -97,7 +97,7 @@ h2 {
 	text-align: center;
 	position: fixed;
 	font-size: 50px;
-	top: 240px;
+	top: 32vh;
 	right: -25vw;
 	opacity: 0.8;
 }
@@ -107,7 +107,7 @@ h2 {
 	text-align: center;
 	position: fixed;
 	font-size: 30px;
-	top: 500px;
+	top: 42vh;
 	right: -25vw;
 	opacity: 0.8;
 	letter-spacing: 10px;
@@ -248,8 +248,26 @@ html, body {
 button {
 z-index: 9999;
 }
-
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 810px){
+.lamp{
+transform:scale(2.5)
+}
+.workshop{
+transform: scale(1.5)
+}
+input[name="switch"], input[name="switch"] + label{
+bottom: 10rem;
+width: 7rem;
+}
+input[value="on"] {
+  right:43vw;
+}
+input[value="on"]:checked + input[value="off"] {
+  right:43vw;
+}
+input[name="switch"] + label {right:43vw;}
+}
+/*@media screen and (max-width: 810px) {
   .p, .workshop, .workshop2 {
     display: none;
   }
@@ -265,7 +283,7 @@ z-index: 9999;
 	display: none;
   }
  }
- 
+ */
 .text{
 font-size: 16px;
 opacity: 0.8;
@@ -429,8 +447,8 @@ line-height: 17px;
 </div>
 <h1 class="workshop">WORKSHOP DE ESTAGS</h1>
 <h1 class="workshop2">09:00 às 13:00 - 24/03/2020 - G25</h1>
-<h1 class="workshopmob">WORKSHOP<br>DE ESTAGS</h1>
-<h1 class="workshopmob2">09:00 às 13:00<br>24/03/2020<br>G25</h1>
+//<h1 class="workshopmob">WORKSHOP<br>DE ESTAGS</h1>
+//<h1 class="workshopmob2">09:00 às 13:00<br>24/03/2020<br>G25</h1>
 </div>
 
 <div id="lamp">
